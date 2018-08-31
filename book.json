@@ -1,0 +1,14 @@
+{
+    "plugins": [
+        "theme-comscore",
+        "disqus"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "disqus": {
+            "shortName": "note-4"
+        }
+    }
+}
