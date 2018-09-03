@@ -4,6 +4,7 @@
 
 * SpringBoot
   * [注解](/SpringBoot/注解.md)
+  * [springboot + hsf + mybatis & JPA](/SpringBoot/hsf.md)
 
 * Java
   * [javaEE](/Java/javaEE.md)
