@@ -5,10 +5,14 @@ git pull
 
 docker rm  -f my-nginx &> /dev/null
 
-docker pull fellah/gitbook
+docker pull billryan/gitbook
 
 docker pull nginx
 
-docker run --rm fellah/gitbook gitbook build ./ build
+docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook install
 
-docker run --name my-nginx -v  $PWD/build:/usr/share/nginx/html -d -p 8080:80 nginx
+docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook build
+
+mv _book build
+
+docker run --name my-nginx -v  $PWD/build:/usr/share/nginx/html -d -p 80:80 nginx
