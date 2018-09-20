@@ -3,6 +3,8 @@ cd `dirname $0`
 
 git pull 
 
+docker rm  -f my-nginx &> /dev/null
+
 docker pull fellah/gitbook
 
 docker pull nginx
