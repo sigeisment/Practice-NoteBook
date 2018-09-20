@@ -5,7 +5,7 @@ git pull
 
 docker rm  -f my-nginx &> /dev/null
 
-docker pull billryan/gitbook
+docker pull billryan/gitbook #https://hub.docker.com/r/billryan/gitbook/
 
 docker pull nginx
 
