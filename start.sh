@@ -9,9 +9,9 @@ docker rm  -f my-nginx &> /dev/null
 
 #docker pull nginx
 
-docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook install
+docker run --rm  -p 4000:4000 billryan/gitbook gitbook install
 
-docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook build
+docker run --rm  -p 4000:4000 billryan/gitbook gitbook build
 
 mv _book build
 
