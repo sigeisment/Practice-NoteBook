@@ -3,6 +3,8 @@ cd `dirname $0`
 
 echo "$PWD"
 
+rm -rf Practice-NoteBook
+
 git clone https://github.com/sigeisment/Practice-NoteBook.git
 
 cd Practice-NoteBook || echo "error"
