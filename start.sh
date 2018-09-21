@@ -1,9 +1,11 @@
 #!/bin/bash
-cd `dirname $0` || echo "$PWD"
+cd `dirname $0`
 
 echo "$PWD"
 
-#git clone https://github.com/sigeisment/Practice-NoteBook.git
+git clone https://github.com/sigeisment/Practice-NoteBook.git
+
+cd Practice-NoteBook || echo "error"
 
 docker rm  -f my-nginx &> /dev/null
 
