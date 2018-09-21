@@ -1,7 +1,7 @@
 #!/bin/bash
 cd `dirname $0`
 
-git pull origin master
+git clone https://github.com/sigeisment/Practice-NoteBook.git
 
 docker rm  -f my-nginx &> /dev/null
 
