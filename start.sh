@@ -13,6 +13,8 @@ docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook install
 
 docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook build
 
+rm build -rf
+
 mv _book build
 
 chmod 777 build
