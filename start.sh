@@ -1,7 +1,7 @@
 #!/bin/bash
 cd `dirname $0`
 
-git pull 
+git pull origin master
 
 docker rm  -f my-nginx &> /dev/null
 
