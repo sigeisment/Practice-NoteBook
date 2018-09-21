@@ -7,7 +7,7 @@
 ## 运行
 
 ```shell
-sudo docker run -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker):/bin/docker -v /var/jenkins:/var/jenkins_home --name my_jenkins  -d auto-jenkins
+sudo docker run -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker):/bin/docker -v /var/jenkins:/var/jenkins_home --name my_jenkins  -d jenkins
 ```
 
 ## Dockerfile
