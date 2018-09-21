@@ -1,7 +1,7 @@
 #!/bin/bash
-cd `dirname $0`
+cd `dirname $0` || echo "$PWD"
 
-git clone https://github.com/sigeisment/Practice-NoteBook.git
+#git clone https://github.com/sigeisment/Practice-NoteBook.git
 
 docker rm  -f my-nginx &> /dev/null
 
