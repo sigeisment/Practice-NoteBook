@@ -1,5 +1,7 @@
 # Jenkins安装
 
+[blueocean](https://www.chenb.top/2018/05/14/spring-boot-admin-jenkins-docker/)
+
 ## 安装 运行
 
 [官方文档](https://github.com/jenkinsci/docker)
