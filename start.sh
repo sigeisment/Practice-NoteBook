@@ -24,8 +24,8 @@ docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook install
 
 docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook build
 
-rm build -rf
+#rm build -rf
 
-mv _book build && chmod 777 build
+#mv _book build && chmod 777 build
 
-docker run --name my-nginx -v  $PWD/build:/usr/share/nginx/html -d -p 80:80 nginx
+docker run --name my-nginx -v  $PWD/_build:/usr/share/nginx/html -d -p 80:80 nginx
