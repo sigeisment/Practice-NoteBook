@@ -29,4 +29,6 @@ mkdir -p /build
 
 chmod 777 /build
 
+mv _book /build
+
 docker run --name my-nginx -v  /build:/usr/share/nginx/html -d -p 80:80 nginx
