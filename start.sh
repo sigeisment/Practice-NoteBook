@@ -13,6 +13,10 @@ cd `dirname $0`
 
 ls -al
 
+chmod 777 ./
+
+ls -al
+
 docker rm  -f my-nginx &> /dev/null
 
 #docker pull billryan/gitbook #https://hub.docker.com/r/billryan/gitbook/
