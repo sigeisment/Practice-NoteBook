@@ -11,6 +11,8 @@ cd Practice-NoteBook || echo "error"
 
 echo "$PWD"
 
+ls -al
+
 docker rm  -f my-nginx &> /dev/null
 
 #docker pull billryan/gitbook #https://hub.docker.com/r/billryan/gitbook/

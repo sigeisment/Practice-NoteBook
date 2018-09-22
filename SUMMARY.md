@@ -15,6 +15,7 @@
 
 * Git
   * [基本操作](/Git/基本操作.md)
+  * [配置管理](/Git/配置管理.md)
 
 * 工具
   * [常用Intellij IDEA快捷键](/工具/IDEA快捷键.md)

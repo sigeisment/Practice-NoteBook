@@ -26,3 +26,22 @@ RUN echo "docker:x:${dockerGid}:jenkins" >> /etc/group
 
 USER jenkins
 ```
+
+## jenkinsci/blueocean
+
+[参考](https://www.chenb.top/2018/05/14/spring-boot-admin-jenkins-docker/)
+
+run
+
+```shell
+docker run \
+  --name jenkins \
+  -d \
+  -u root \
+  -p 8080:8080 \
+  -v /jenkins-data:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -e TZ=Asia/Shanghai \
+  -v "$HOME":/home \
+  jenkinsci/blueocean
+  ```
