@@ -11,11 +11,7 @@ cd `dirname $0`
 
 #echo "$PWD"
 
-ls -al
-
 chmod 777 $PWD -R
-
-ls -al
 
 docker rm  -f my-nginx &> /dev/null
 
