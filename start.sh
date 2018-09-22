@@ -25,5 +25,8 @@ docker rm  -f my-nginx &> /dev/null
 #ls -al
 
 #mv _book build && chmod 777 build -R
+mkdir /build
+
+chmod 777 /build
 
 docker run --name my-nginx -v  /build:/usr/share/nginx/html -d -p 80:80 nginx
