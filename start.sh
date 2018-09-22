@@ -25,7 +25,7 @@ docker rm  -f my-nginx &> /dev/null
 #ls -al
 
 #mv _book build && chmod 777 build -R
-mkdir -p /build
+sudo mkdir -p /build
 
 chmod 777 /build
 
