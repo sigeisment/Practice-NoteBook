@@ -11,8 +11,6 @@ cd `dirname $0`
 
 #echo "$PWD"
 
-chmod 777 $PWD -R
-
 docker rm  -f my-nginx &> /dev/null
 
 #docker pull billryan/gitbook #https://hub.docker.com/r/billryan/gitbook/
@@ -24,8 +22,12 @@ docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook install
 
 docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook build
 
+ls -al
+
 rm build -rf
 
 mv _book build && chmod 777 build -R
+
+ls -al
 
 docker run --name my-nginx -v  $PWD/build:/usr/share/nginx/html -d -p 80:80 nginx
