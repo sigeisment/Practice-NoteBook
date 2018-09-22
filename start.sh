@@ -16,19 +16,14 @@ docker rm  -f my-nginx &> /dev/null
 #docker pull billryan/gitbook #https://hub.docker.com/r/billryan/gitbook/
 
 #docker pull nginx
-#docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook init
+docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook init
 
-#docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook install
+docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook install
 
-#docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook build
+docker run --rm -v $PWD:/gitbook -p 4000:4000 billryan/gitbook gitbook build
 
 #ls -al
 
-#mv _book build && chmod 777 build -R
-sudo mkdir -p /build
+sudo mv _book build && chmod 777 build -R
 
-chmod 777 /build
-
-mv _book /build
-
-docker run --name my-nginx -v  /build:/usr/share/nginx/html -d -p 80:80 nginx
+docker run --name my-nginx -v  $PWD/build:/usr/share/nginx/html -d -p 80:80 nginx
