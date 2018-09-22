@@ -13,7 +13,7 @@ cd `dirname $0`
 
 ls -al
 
-chmod 777 $PWD
+chmod 777 $PWD -R
 
 ls -al
 
