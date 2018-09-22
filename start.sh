@@ -26,4 +26,4 @@ docker rm  -f my-nginx &> /dev/null
 
 #mv _book build && chmod 777 build -R
 
-docker run --name my-nginx -v  $PWD/build:/usr/share/nginx/html -d -p 80:80 nginx
+docker run --name my-nginx -v  /build:/usr/share/nginx/html -d -p 80:80 nginx
