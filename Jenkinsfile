@@ -13,7 +13,7 @@ pipeline {
         sh 'gitbook init'
         sh 'gitbook install'
         sh 'gitbook build'
-        sh 'mv _book build && chmod 777 build -R'
+        sh 'mv _book / && chmod 777 /build -R'
       }
     }
     stage('run') {
