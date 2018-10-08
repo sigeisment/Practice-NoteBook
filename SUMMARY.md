@@ -19,6 +19,8 @@
 
 * 工具
   * [常用Intellij IDEA快捷键](/工具/IDEA快捷键.md)
+  * [VSCode](/VSCode插件.md)
+  * [IDEA插件](/IDEA插件.md)
 
 * 网络协议
   * [HTTP协议](/网络协议/HTTP协议.md)
@@ -30,3 +32,6 @@
   * [Docker安装](/Docker/Docker安装.md)
   * [Jenkins安装](/Docker/Jenkins安装.md)
   * [Dockerfile](/Docker/Dockerfile.md)
+
+* SQL
+  * [左连接优化](/SQL/优化.md)
