@@ -19,8 +19,8 @@
 
 * 工具
   * [常用Intellij IDEA快捷键](/工具/IDEA快捷键.md)
-  * [VSCode](/VSCode插件.md)
-  * [IDEA插件](/IDEA插件.md)
+  * [VSCode](/工具/VSCode插件.md)
+  * [IDEA插件](/工具/IDEA插件.md)
 
 * 网络协议
   * [HTTP协议](/网络协议/HTTP协议.md)
